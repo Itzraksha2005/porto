@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #container{
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          
+        }
+
+        #container ul {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+         
+        }
+
+        #container ul li {
+            list-style: none;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 17px;
+            color:blueviolet;
+        }
+
+        #container ul li a {
+            text-decoration: none;
+        }
+
+        #container #navigation {
+            width: 1800px;
+            /* background-color: rgb(215, 210, 210); */
+           
+        }
+
+        #container #intro {
+            width: 400px;
+            margin-left: 30px;
+            margin-top:70px;
+        }
+        #container #intro h3{
+            margin: 20px;
+        }
+        
+
+        #container #intro p {
+            font-size: 17px;
+        }
+
+        #container #intro #btn {
+            color:navy;
+            font-weight: bold;
+            width: 150px;
+            background-color:#5E3023;
+            height:30px;
+            border-radius: 8px;
+            margin: 30px;
+        
+        }
+
+        #container #intro h1 {
+            font-size: 50px;
+            border-right: .15rem solid orange;
+            width: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:Name 12s steps(20,end) infinite,forwards;
+        }
+        @keyframes Name{
+            0%{
+               width: 0%;
+            }
+            50%{
+                width:100%;
+            }
+            
+        }
+         
+        #container #intro p{
+            margin: 20px;
+            line-height: 2em;
+        }
+
+        #img img {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            margin-top: 60px;
+        }
+
+        #cont {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+            height: 700px;
+        }
+
+        #skill p {
+            width: 400px;
+            margin:18px;
+
+        }
+
+        #skill {
+            padding-top:30px;
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+            width: 1600px;
+            /* background-color: rgb(177, 177, 220); */
+        }
+         #skill #textarea{
+            padding-top:50px;
+         }
+
+        #programming hr {
+            height: 2px;
+            width: 570px;
+            background-color: black;
+            margin-right: 60px;
+            margin-top: 40px;
+        }
+
+        #programming span {
+            display: flex;
+            margin-left: 20px;
+            justify-content: space-between;
+        }
+
+        #programming span p {
+            width: 330px;
+            margin-left: 20px;
+          
+        }
+        #programming span h2{
+            margin-top:20px;
+        }
+
+        #text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #design span p {
+            width: 330px;
+            margin-left: 20px;
+        }
+
+        #design span {
+            display: flex;
+            justify-content: space-between;
+        }
+        #design span h2{
+            margin-top: 20px;
+        }
+
+        #design {
+            margin: 30px;
+            margin-left: 20px;
+        }
+
+        #design hr {
+            height: 2px;
+            width: 530px;
+            background-color: black;
+            margin-right: 60px;
+            margin-top: 40px;
+        }
+
+        #machine {
+            margin: 30px;
+        }
+
+        #img_sec img {
+            width: 200px;
+            height: 200px;
+            margin-left: 30px;
+        }
+
+        #img_sec h3 {
+            margin-left: 30px;
+            font-size: 30px;
+        }
+
+        #img_sec {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #img_sec hr {
+            height: 2px;
+            background-color: black;
+        }
+
+        #project {
+            margin-left: 50px;
+        }
+
+        #project h2 {
+            font-size: 30px;
+            margin-left: 100px;
+            padding: 90px;
+            margin-top: 200px;
+        }
+
+        #img_sec #cal {
+            margin-top:200px
+        }
+
+        #img_sec #cal  h3{
+            margin: 20px;
+        }
+        #img_sec #todo {
+            margin-top: 140px;
+        }
+
+        #img_sec #todo h3{
+            margin: 20px;
+        }
+        #img_sec #note {
+            margin-top:60px
+        }
+
+        #img_sec #note h3{
+            margin: 20px;
+        }
+        #section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding:100px;
+            /* background-color:#4682B4; */
+        }
+        #section p{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #section img{
+            border-radius: 50%;
+        }
+        #textt{
+            margin-top: 100px;
+            padding: 100px;
+        }
+        #textt #footer img{
+            padding:20px;
+        }
+        #textt  h3{
+            font-size: 25px;
+        }
+      
+        #skill p{
+            line-height: 2em;
+            font-size:18px;
+        }
+        #skill #text{
+            margin-top:-20px;
+        }
+       #cal img{
+            width: 400px;
+            height: 180px;
+            padding-bottom: 30px;
+        }
+        #nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        #img_section img{
+        margin-right: 10px;
+        }
+        .dark-theme{
+            background-color: black;
+            color: white;
+        }
+        @media (max-width:600px) {
+             #cont {
+                display: flex;
+                justify-content: space-evenly;
+             }
+             #skill #text{
+                display: flex;
+                flex-direction: column;
+             }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <nav id="navigation">
+                <ul>
+                    <li> <a href="#container">HOME </a></li>
+                    <li> <a href="#skill">SKILLS </a></li>
+                    <li> <a href="#project">PROJECTS </a></li>
+                    <li> <a href="#section">CONTACT</a></li>
+                </ul>
+            </nav> 
+            <div id="img_section"><img src="moon.png" alt="" width="20px" height="20px" id="icon"></div>
+        </div>
+
+        <div id="cont">
+            <div id="intro">
+                <h3>Hello</h3>
+                <h1>I,m Raksha verma</h1>
+                <p>I'm passionate web developer with a keen eye for design and a flair for creating
+                    sessions,user-friendly digital experiences.With a strong foundation in front-end and back-end
+                    technologies. I specialize in turning ideas into beautifully crafted websites and with applications.
+                </p>
+                <button id="btn"><B> <a href="RAKSHA VERMA.pdf"> RESUME</a></B></button>
+            </div>
+            <div id="img">
+                <img src="nimg.jpg" alt="">
+            </div>
+        </div>
+        <div id="skill">
+            <div id="textarea">
+                <h1>My Skills</h1>
+                <p>As a dedicated web developer ,I've honed a versatile skill set that empowers me to bring creative
+                    visions to life in the digital realm.My proficiency spans both front-end and back-end
+                    technologies,including HTML,CSS,JAVASCRIPT, and a variety of popular frameworks and libraries.</p>
+
+            </div>
+            <div id="text">
+                <div id="programming">
+                    <hr>
+                    <span id="span">
+                        <h2>Competetive <br>programming</h2>
+                        <p>I regularly do Competetive coding since i love the problem solving.
+                            have 3 star at codechef and 5 star at hackerRank.
+                        </p>
+                    </span>
+                </div>
+                <div id="design">
+                    <hr>
+                    <span id="span">
+                        <h2>Design And <br>Development</h2>
+                        <p>I have developed many websites and projects.Over time I have gained a wealth of experience
+                            designing and developing web application.
+                        </p>
+                    </span>
+                </div>
+                <!-- <div id="machine">
+                    <h2>Machine Learning</h2>
+                    <p>I'm Machine Learning Enthusaiast.</p>
+                </div> -->
+            </div>
+        </div>
+        <div id="project">
+            <div>
+                <h2>My Projects:</h2>
+            </div>
+            <div id="img_sec">
+                <div id="cal">
+                    <hr>
+                    <h3>Qr code generator</h3>
+                    <img src="qr-code.jpg" alt="" id="Calculator">
+                </div>
+                <div id="todo">
+                    <hr>
+                    <h3>To do List</h3>
+                    <img src="do-list-planning-icon-concept-600nw-739093225.webp" alt="">
+                </div>
+                <div id="note">
+                    <hr>
+                    <h3>Online-Exam</h3>
+                    <img src="360_F_870159298_RTQ5f59Lz1G0EDDgtK2iYtmKOiCiYbTi.jpg" alt="">
+                </div>
+            </div>
+        </div>
+         <section id="section">
+                 <h2>Get In Touch</h2>
+                 <p>Lets Collab and do a project</p>
+                  <div id="textt">
+                     <h3>Contact me</h3>
+                      <div id="footer">
+                      <a href=" "> <img src="bangalore-karnataka-india-23-september-260nw-2366859519.webp" alt="" width="90px",height="90px"></a>  
+                       <a href="https://www.linkedin.com/in/raksha-verma-b36453279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "> <img src="czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.webp" alt="" width="70px",height="100px"></a>
+                    <a href="https://github.com/Itzraksha2005">    <img src="GitHub-Mark-ea2971cee799.png" alt="" width="70px",height="100px"></a>
+                        <img src="photo-1611605698335-8b1569810432.jpeg" alt="" width="70px",height="100px">
+                        
+                      </div>
+                      <span>c 2025 Portfolio</span>
+                  </div>
+         </section>
+         
+    </div>
+    <script>
+         var icon=document.getElementById('icon');
+         icon.onclick=function (){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="sun.png"
+            }
+            else{
+                icon.src="moon.png";
+            }
+         }
+     
+    </script>
+
+</body>
+
+</html>
